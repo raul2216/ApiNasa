@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "ApiNasa",
-    "slug": "ApiNasa",
+    "slug": "apinasa",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e72dbd11-02fc-484d-bde8-682451d82319"
+      }
+    },
+    "owner": "azael22"
   }
 }

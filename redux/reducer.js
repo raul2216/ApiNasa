@@ -1,9 +1,10 @@
-import { GET_NASA} from "./actions"
+import { GET_NASA, GET_NASA_5_DAYS} from "./actions"
 
 
 
 const inicialState = {
-    nasa: []
+    nasa: {},
+    nasa5Days: null
 }
 
  const reducer = (state = inicialState, action ) => {
@@ -12,8 +13,13 @@ const inicialState = {
         case GET_NASA:
             return {
                 ...state,
-                nasa: action.payload
+                nasa: {... action.payload}
             };
+        case GET_NASA_5_DAYS:
+            return{
+                ...state,
+                nasa5Days: action.payload
+            }
             default:
                 return state;
     }

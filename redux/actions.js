@@ -22,6 +22,7 @@ export function getNasa5Days(fiveDays) {
         try {
             const nasa5Days = (await axios.get(`https://api.nasa.gov/planetary/apod?api_key=8202nANlsnYqqKma0AyZTX52OSpoRxAdGlzUc19a${fiveDays?.length > 0 ? fiveDays : ""}`)).data
             dispatch({ type: GET_NASA_5_DAYS, payload: nasa5Days })
+            
         } catch (error) {
             console.log({ error })
         }

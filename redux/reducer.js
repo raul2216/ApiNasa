@@ -4,7 +4,7 @@ import { GET_NASA, GET_NASA_5_DAYS} from "./actions"
 
 const inicialState = {
     nasa: {},
-    nasa5Days: null
+    nasa5Days: []
 }
 
  const reducer = (state = inicialState, action ) => {

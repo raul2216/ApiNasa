@@ -1,6 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
 import { Platform, StyleSheet, Text, View } from 'react-native';
-import Header from './src/components/Header/Header';
 import Home from './src/Views/Home/Home';
 import { SafeAreaView } from 'react-native';
 import { Provider } from 'react-redux';

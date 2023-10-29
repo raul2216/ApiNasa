@@ -35,11 +35,13 @@ export default function Home() {
 
   const item = useSelector((state) => state.nasa);
   const items = useSelector((state) => state.nasa5Days);
+
+ 
   return (
     <View style={styles.container}>
       <Header />
       <TodayImage {...item} />
-      <Last5DaysImage {...items} />
+      <Last5DaysImage items={items} />
     </View>
   );
 }

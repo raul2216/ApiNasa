@@ -6,6 +6,10 @@ export default function PostImage () {
     return (
         <View>
 
+            <Text>
+                 view PostImage
+            </Text>
+
         </View>
     )
 } 

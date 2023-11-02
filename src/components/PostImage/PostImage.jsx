@@ -7,7 +7,7 @@ export default function PostImage () {
         <View>
 
             <Text>
-                 view PostImage
+                 view PostImage, commit
             </Text>
 
         </View>
